@@ -39,14 +39,13 @@
             transition: opacity 0.5s ease;
         }
 
-        /* Voetbal tekens in het wachtwoordveld */
         @font-face {
             font-family: 'FootballChars';
             src: local('Apple Color Emoji'), local('Segoe UI Emoji');
         }
         
         #pw-input {
-            -webkit-text-security: disc; /* Voor browsers die dit ondersteunen */
+            -webkit-text-security: disc;
             font-family: 'FootballChars', sans-serif;
             letter-spacing: 4px;
         }
@@ -74,9 +73,7 @@
             <div class="max-w-4xl mx-auto">
                 <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Vrijgezellen PDB</h1>
                 <p class="text-xl md:text-2xl opacity-90 font-light">Maak je klaar voor Pieter op zijn best!</p>
-                
                 <span class="inline-block bg-yellow-400 text-blue-900 px-4 py-1 rounded-full font-bold text-sm mb-4 uppercase tracking-widest">TOP SECRET voor pieter</span>
-
             </div>
         </header>
 
@@ -114,10 +111,10 @@
                     <p class="text-gray-600">Bodegem en Leuven</p>
                 </div>
             </div>
-                <!-- REGISTRATIE SECTIE -->
+
             <section class="mb-20 bg-white p-8 md:p-12 rounded-3xl shadow-lg border-2 border-blue-100 text-center">
-                <h2 class="text-3xl font-black mb-8 text-blue-900 uppercase tracking-tight">Schrijf hier in:</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+                <h2 class="text-3xl font-black mb-8 text-blue-900 uppercase tracking-tight">Geef hier u anekdotes en ideëen:</h2>
+                <div class="grid grid-cols-1 md:grid-cols-1 gap-6 max-w-3xl mx-auto">
                     <a id="btn-stap1" target="_blank" class="flex flex-col items-center justify-center bg-blue-600 hover:bg-blue-700 text-white p-6 rounded-2xl transition-all transform hover:scale-105 shadow-xl group">
                         <span class="text-blue-200 font-bold text-sm uppercase mb-1">Stap 1</span>
                         <span class="text-xl font-extrabold">Vul de Survey in</span>
@@ -125,13 +122,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
                         </svg>
                     </a>
-                    <a id="btn-stap2" target="_blank" class="flex flex-col items-center justify-center bg-green-600 hover:bg-green-700 text-white p-6 rounded-2xl transition-all transform hover:scale-105 shadow-xl group">
-                        <span class="text-green-200 font-bold text-sm uppercase mb-1">Stap 2</span>
-                        <span class="text-xl font-extrabold">Betaalverzoek</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mt-3 opacity-50 group-hover:opacity-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
-                        </svg>
-                    </a>
+                    
                 </div>
                 <p class="mt-6 text-gray-500 text-sm italic">Gelieve beide stappen te voltooien om je inschrijving te bevestigen.</p>
             </section>
@@ -139,81 +130,90 @@
             <section class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-20">
                 <div>
                     <h2 class="text-3xl font-bold mb-6 text-blue-900 border-l-4 border-yellow-400 pl-4">Het Programma</h2>
-                    <div class="space-y-8">
+                    <div class="space-y-6">
                         <div class="flex gap-4">
-                            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">1</div>
+                            <div class="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-sm">1</div>
                             <div>
-                                <h4 class="font-bold text-xl">Start om 09u30 @ Sint-Martens-Bodegem</h4>
-                                <p class="text-gray-600">adres: Solleveld 11, 1700 Dilbeek</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">2</div>
-                            <div>
-                                <h4 class="font-bold text-xl">Voormiddag activiteit: "Bubble"</h4>
-                                <p class="text-gray-600">Meer info volgt.</p>
+                                <h4 class="font-bold text-lg">Start @ Sint-Martens-Bodegem</h4>
+                                <p class="text-gray-600 text-sm italic">09u30, sSolleveld 11, 1700 Dilbeek</p>
                             </div>
                         </div>
                         <div class="flex gap-4">
-                            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">3</div>
+                            <div class="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-sm">2</div>
                             <div>
-                                <h4 class="font-bold text-xl">Middagmaal</h4>
-                                <p class="text-gray-600">Meer info volgt.</p>
+                                <h4 class="font-bold text-lg">Bubblebal</h4>
+                                <p class="text-gray-600 text-sm">Botsen, rollen en vliegen.</p>
                             </div>
                         </div>
                         <div class="flex gap-4">
-                            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">4</div>
+                            <div class="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-sm">3</div>
                             <div>
-                                <h4 class="font-bold text-xl">Party Bus naar Leuven</h4>
-                                <p class="text-gray-600">Meer info volgt.</p>
-                            </div>
-                        </div>
-                         <div class="flex gap-4">
-                            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">5</div>
-                            <div>
-                                <h4 class="font-bold text-xl">Namiddag activiteit</h4>
-                                <p class="text-gray-600">Meer info volgt.</p>
-                            </div>
-                        </div>
-                         <div class="flex gap-4">
-                            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">6</div>
-                            <div>
-                                <h4 class="font-bold text-xl">Diner op Restaurant</h4>
-                                <p class="text-gray-600">Meer info volgt.</p>
+                                <h4 class="font-bold text-lg">De "Pieter-vs-de-rest" quiz</h4>
+                                <p class="text-gray-600 text-sm">Interactieve quiz over de man van de dag.</p>
                             </div>
                         </div>
                         <div class="flex gap-4">
-                            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">7</div>
+                            <div class="flex-shrink-0 w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-700 font-bold text-sm">4</div>
                             <div>
-                                <h4 class="font-bold text-xl">De nacht in</h4>
-                                <p class="text-gray-600">Een stapke zetten in Leuven. We leggen ter plaatse een potje.</p>
+                                <h4 class="font-bold text-lg">Middagmaal: Boma worst Deluxe</h4>
                             </div>
                         </div>
                         <div class="flex gap-4">
-                            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">8</div>
+                            <div class="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-sm">5</div>
                             <div>
-                                <h4 class="font-bold text-xl">Ontbijt inbegrepen</h4>
-                            </div>
-                        </div>
-                         <div class="flex gap-4">
-                            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">9</div>
-                            <div>
-                                <h4 class="font-bold text-xl">Terugrit met de trein</h4>
-                                <p class="text-gray-600">Meer info volgt.</p>
+                                <h4 class="font-bold text-lg">Party Bus naar Leuven</h4>
+                                <p class="text-gray-600 text-sm">Inclusief tussenstop aan het RSCA stadion.</p>
                             </div>
                         </div>
                         <div class="flex gap-4">
-                            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">10</div>
+                            <div class="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-sm">6</div>
                             <div>
-                                <h4 class="font-bold text-xl">Wedstrijd: De Vrijgezellen tegen de rest</h4>
-                                <p class="text-gray-600">We nodigen familie en vrienden uit voor een afsluitende voetbalwedstrijd.</p>
+                                <h4 class="font-bold text-lg">Aankomst & Check-in</h4>
+                                <p class="text-gray-600 text-sm">Inchecken hotel onder muzikale begeleiding.</p>
                             </div>
                         </div>
                         <div class="flex gap-4">
-                            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">11</div>
+                            <div class="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-sm">7</div>
                             <div>
-                                <h4 class="font-bold text-xl">Verwacht einduur om 15u30</h4>
-                                <p class="text-gray-600">Blijven plakken toegestaan!</p>
+                                <h4 class="font-bold text-lg">Pieter-en-de-leuvenaars</h4>
+                                <p class="text-gray-600 text-sm italic">Input welkom via survey.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-700 font-bold text-sm">8</div>
+                            <div>
+                                <h4 class="font-bold text-lg">Diner All-inclusive</h4>
+                                <p class="text-gray-600 text-sm">@ Fonduehuisje</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 font-bold text-sm">10</div>
+                            <div>
+                                <h4 class="font-bold text-lg">De nacht in</h4>
+                                <p class="text-gray-600 text-sm">Een stapke zetten in Leuven. We leggen ter plaatse een potje.</p>
+                            </div>
+                        </div>
+                        <div class="pt-4 border-t border-gray-200">
+                             <div class="flex gap-4">
+                                <div class="flex-shrink-0 w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-700 font-bold text-sm">11</div>
+                                <div>
+                                    <h4 class="font-bold text-lg">Ontbijt & Terugrit</h4>
+                                    <p class="text-gray-600 text-sm">Ontbijt inbegrepen. Terugrit met de trein om 10u30.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-sm">12</div>
+                            <div>
+                                <h4 class="font-bold text-lg">De Vrijgezellen vs de rest</h4>
+                                <p class="text-gray-600 text-sm">Afsluitende voetbalwedstrijd met familie en vrienden.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 opacity-75">
+                            <div class="flex-shrink-0 w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 font-bold text-sm">13</div>
+                            <div>
+                                <h4 class="font-bold text-lg">15:30 Einde</h4>
+                                <p class="text-gray-600 text-sm italic">Blijven plakken toegestaan!</p>
                             </div>
                         </div>
                     </div>
@@ -223,23 +223,20 @@
                     <div class="absolute top-0 right-0 -mt-4 -mr-4 w-32 h-32 bg-blue-800 rounded-full opacity-50"></div>
                     <h2 class="text-2xl font-bold mb-6 relative z-10">*Wat is er allemaal inbegrepen</h2>
                     <ul class="space-y-4 relative z-10">
-                         <li class="flex items-center gap-3">✔️ Dranken en versnaperingen zaterdag tot het avondmaal</li>
-                         <li class="flex items-center gap-3">✔️ Voormiddag activiteit</li>
-                         <li class="flex items-center gap-3">✔️ Vervoer naar Leuven met Party-Bus</li>
-                         <li class="flex items-center gap-3">✔️ Namiddag activiteit</li>
-                         <li class="flex items-center gap-3">✔️ Avonddiner op restaurant inclusief drank</li>
-                         <li class="flex items-center gap-3">✔️ Overnachting op Hotel </li>
-                         <li class="flex items-center gap-3">✔️ Een koffiekoekske</li>
-                         <li class="flex items-center gap-3">✔️ Terugrit met de trein</li>
+                         <li class="flex items-center gap-3">✔️ Dranken en versnaperingen zaterdag</li>
+                         <li class="flex items-center gap-3">✔️ Bubblebal & Quiz</li>
+                         <li class="flex items-center gap-3">✔️ Boma Worst Deluxe Middagmaal</li>
+                         <li class="flex items-center gap-3">✔️ Party-Bus (incl. RSCA stop)</li>
+                         <li class="flex items-center gap-3">✔️ All-inclusive Diner @ Fonduehuisje</li>
+                         <li class="flex items-center gap-3">✔️ Hotelovernachting & Ontbijt</li>
+                         <li class="flex items-center gap-3">✔️ Treinticket terug</li>
                          <li class="flex items-center gap-3">✔️ Wedstrijdaccommodatie</li>
                     </ul>
                     <div class="mt-10 p-4 bg-blue-800 rounded-xl border border-blue-700">
-                        <p class="text-sm italic opacity-80 text-center">"What happens on the vrijgezellen, stays on the vrijgezellen en in de  Whatsapp groep..."</p>
+                        <p class="text-sm italic opacity-80 text-center">"What happens on the vrijgezellen, stays on the vrijgezellen..."</p>
                     </div>
                 </div>
             </section>
-
-        
 
             <section class="text-center py-12 bg-white rounded-3xl shadow-sm border border-gray-100">
                 <h2 class="text-2xl font-bold mb-4">Vragen?</h2>
@@ -265,15 +262,12 @@
     </div>
 
     <script>
-        // --- CONFIGURATIE LINKS (PAS HIER DE SITES AAN) ---
         const URL_SURVEY = "https://docs.google.com/forms/d/e/1FAIpQLSel_YMa2hQcxqym23istKcTjSRr-_ke7cp6pocbkfHO4bbIBA/viewform?usp=header";
         const URL_BETAALVERZOEK = "https://www.kbc.be/pay/nl?token=eec68a11-8a69-4567-b93c-6849acbccd38-avmRflW_5Nxoaal1ebFri0uVmY0";
         
-        // Link de knoppen aan de URL's
         document.getElementById('btn-stap1').href = URL_SURVEY;
         document.getElementById('btn-stap2').href = URL_BETAALVERZOEK;
 
-        // WACHTWOORD CHECK
         function checkPassword() {
             const input = document.getElementById('pw-input').value.toLowerCase();
             const overlay = document.getElementById('password-overlay');
@@ -283,7 +277,7 @@
                 overlay.style.opacity = '0';
                 setTimeout(() => {
                     overlay.style.display = 'none';
-                    bodyTag.style.overflow = 'auto'; // Scrollen aanzetten
+                    bodyTag.style.overflow = 'auto';
                 }, 500);
             } else {
                 alert('Fout! Probeer het opnieuw.');
@@ -291,14 +285,12 @@
             }
         }
 
-        // Enter-toets ondersteuning
         document.getElementById('pw-input').addEventListener('keypress', function (e) {
             if (e.key === 'Enter') {
                 checkPassword();
             }
         });
 
-        // MODAL LOGICA
         const modal = document.getElementById('contactModal');
         const openBtn = document.getElementById('openModal');
         const closeBtn = document.getElementById('closeModal');
